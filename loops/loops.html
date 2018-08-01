@@ -14,7 +14,26 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
 
-var randomInt = getRandomInt(1, 100);
+var randomInt = getRandomInt(1, 20);
+var x = prompt("Guess the number!");
+ 
+for(x; x!==randomInt; x = prompt("Try to guess the number again!"))
+{
+	if(x>randomInt)
+	{
+		document.write("Too high");
+		document.write("  ");
+	}
+	else if(x<randomInt)
+	{
+		document.write("Too low");
+		document.write("  ");
+	}
+	else
+	{
+		document.write("You guessed the number!!!");
+	}
+}
 /* END STARTING CODE */
 
 // your code goes under here
